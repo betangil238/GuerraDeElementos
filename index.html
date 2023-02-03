@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUERRA DE ELEMENTOS</title>
+    <link rel="stylesheet" href="elementos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="seleccionGuerrero">
+        <H1 class="titulo">COMBATE DE ELEMENTOS</H1>
+        <h2 class="subtitulo"> Selecciona tu guerrero</h2>
+        
+    <div id="contenedorGuerreros">
+
+    </div>
+        <button id="botonSeleccionar">Seleccionar</button>
+    </section>
+
+    <section id="seccionCanvas">
+        <h1 class="titulo">Busca un guerrero acorde a tus habilidades</h1>
+        <canvas id="pantalla"></canvas>
+        
+        <button onmouseup="detenerse()" id="arriba">Arriba</button>
+        <div>
+            <button onmouseup="detenerse()" id="izquierda">Izquier</button>
+            <button onmouseup="detenerse()" id="abajo">Abajo</button>
+            <button onmouseup="detenerse()" id="derecha">Derecha</button>
+        </div>
+    </section>
+
+    <section id="seleccionElemento">
+        <H1 class="titulo">COMBATE DE ELEMENTOS</H1>
+        <h2 class="subtitulo">Selecciona tu elemento</h2>
+
+        <div id="contenedorBotones">
+      
+        </div>
+
+            <section id="mensajes">
+
+                <div id="Mensaje1">
+                    <p class="nombres">Guerrero de <span id="nombre"></span></p>
+                    <p class="vidas"><span id="vidaJugador"></span></p>
+                    <p class="guerritos"><span id="guerreroJugador"></span></p>
+                    <div id="mensaje1"></div>
+                    
+                </div>
+
+                <div id="mensajesFinales">
+                    <div id="Mensaje3">
+                        <p id="mensaje3"></p>
+                    </div>
+    
+                    <section id="reiniciar">
+                        <button id="botonReiniciar">Reiniciar</button>
+                    </section>
+                </div>
+
+                <div id="Mensaje2">
+                    <p class="nombres">Guerrero de la maquina</p>
+                    <p class="vidas"><span id="vidaMaquina"></span></p>
+                    <p class="guerritos"><span id="guerreroMaquina"></span></p>
+                    <div id="mensaje2"></div>
+                </div>
+
+
+            </section>
+
+       
+    </section>
+    <script src="elementos.js"></script>
+</body>
+</html>
