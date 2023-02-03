@@ -1,0 +1,255 @@
+body{
+    background: url(fondo.jpg);
+   background-size: cover;
+   position: relative;
+   font-family: 'Moon Dance', cursive;
+}
+
+#seleccionGuerrero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.titulo{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 60px;
+    color:#f1f1f1 ;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 50px;
+    color:#f6f4f4 ;
+    align-items: center;
+}
+
+.personajetoph,.personajekatara,.personajesokka,.personajemomo,.personajezuko,.personajeappa{
+    height: 520px;
+    width: 170px;
+    border: 3px solid #040247 ;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  
+}
+.personajetoph {
+    background: url(toph2.png) no-repeat;
+}
+
+.personajekatara{
+    background: url(katara2.png) no-repeat;
+}
+.personajesokka{
+    background: url(sokka2.png) no-repeat;
+}
+.personajemomo{
+    background: url(momo2.png) no-repeat;
+}
+.personajezuko{
+    background: url(zuko2.png) no-repeat;
+}
+.personajeappa{
+    background: url(appa2.png) no-repeat;
+}
+
+
+.nombrespj{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 40px;
+    color: #000000;
+    background-color: #ececec9c;
+    width: 165px;
+    /* height: 520px; */
+    border-radius: 10px;
+    text-align: center;
+}
+input{
+    display: none;
+}
+
+.personajetoph:hover,.personajekatara:hover,.personajesokka:hover,.personajemomo:hover,.personajezuko:hover,.personajeappa:hover{
+    height: 530px;
+    width: 180px;
+    border: 5px solid #fdad00 ;
+}
+.personajetoph:active,.personajekatara:active,.personajesokka:active,.personajemomo:active,.personajezuko:active,.personajeappa:active{
+    height: 520px;
+    width: 170px;
+    border: 3px solid #ffffff ;
+  }
+
+#contenedorGuerreros{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#seleccionElemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: url(fondo.jpg);
+}
+
+#botonSeleccionar,#botonReiniciar{
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    background: linear-gradient(75deg,#949494b1,#19034d8b);
+    border: 2px solid #ffffff ;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 45px;
+    margin: 30px;
+    color: #f1f1f1;
+}
+.botonAtaque{
+    width: 80px;
+    height: 60px;
+    border-radius: 20px;
+    background: linear-gradient(75deg,#949494b1,#19034d8b);
+    border: 2px solid #ffffff ;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 45px;
+    margin: 30px;
+    color: #f1f1f1;
+}
+
+
+#botonSeleccionar :hover{
+    transition: 1s;
+    width: 195px;
+    height: 50px;
+    border-radius: 20px;
+    background: linear-gradient(75deg,#9d260b,#02310e);
+    border: 2px solid #ececec ;
+}
+
+
+#mensajes{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'East Sea Dokdo', cursive;
+    color: #000000;
+    font-size: 30px;
+
+}
+
+
+#Mensaje1, #Mensaje2{
+    width: 250px;
+    height: 450px;
+    background-color:#f1f1f1 ;
+    border-radius: 20px;
+    border: 2px solid #f89500 ;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+
+#mensajesFinales{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#Mensaje3{
+    width: 250px;
+    height: 200px;
+    background-color:#757474 ;
+    border-radius: 20px;
+    border: 2px solid #f89500 ;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+
+.nombres{
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: #4f4b46;
+}
+
+.vidas{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: #9d260b;
+}
+.guerreritos{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 30px;
+}
+
+#seccionCanvas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#seccionCanvas button{
+    width: 80px;
+    height: 60px;
+    border-radius: 20px;
+    background: linear-gradient(75deg,#949494b1,#19034d8b);
+    border: 2px solid #ffffff ;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 30px;
+    margin: 10px;
+    color: #f1f1f1;
+}
+
+
+@media (max-width:500px){
+    .personajetoph,.personajekatara,.personajesokka,.personajemomo,.personajezuko,.personajeappa{
+        height: 300px;
+    }
+    #contenedorGuerreros{
+        display: flex;
+        flex-direction: column;
+    }
+    #mensajes{
+        flex-direction: column;
+    }
+    #Mensaje1, #Mensaje2{
+        height: 250px;
+    }
+    #Mensaje3{
+        height: 150px;
+    }
+    .botonAtaque{
+    display: flex;
+    flex-direction: column;
+    }
+
+}
+@media (max-width:500px){
+    #seccionCanvas div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+}
